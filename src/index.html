@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FastNote</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="../public/adept2.png" type="image/x-icon" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="hidden-child">
+        <div class="task-list">
+          <div class="check-box" clicked="false" tabindex="0" title="Check">
+            <div class="check">
+              <div class="check-animation"></div>
+            </div>
+          </div>
+          <div class="task-overlay">
+            <span>What are your plans?</span>
+          </div>
+          <div class="image" tabindex="0" title="Insert task details">
+            <img src="../public/clipboard-arrow-up-svgrepo-com.svg" alt="" />
+          </div>
+          <div class="count" tabindex="-1"><span>0</span></div>
+          <div class="time-input">
+            <button tabindex="-1">Apply</button>
+            <div class="inputs">
+              <input tabindex="-1" id="hours" type="text" maxlength="2" />
+              <input tabindex="-1" id="minutes" type="text" maxlength="2" 59 />
+              <input tabindex="-1" id="seconds" type="text" maxlength="2" 59 />
+            </div>
+            <button tabindex="-1">Cancel</button>
+            <!-- design flaw -->
+            <div class="colons">
+              <span>:</span>
+              <span>:</span>
+            </div>
+          </div>
+          <div class="time-stage" tabindex="0" title="Add a due date">
+            <span></span>:<span></span>:<span></span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="add">
+          <input id="taskAdd" type="text" placeholder="Add a task..." />
+          <button tabindex="-1" title="Add a task">+</button>
+        </div>
+        <div class="tasks"></div>
+        <div class="hover-area">
+          <div class="hover-content">
+            <div class="front">
+              <div class="front-border">
+                <h2>This is where all your tasks will be.</h2>
+              </div>
+            </div>
+            <div class="back">
+              <h1>
+                <span>F</span>
+                <span>A</span>
+                <span>S</span>
+                <span>T</span>
+                <span>N</span>
+                <span>O</span>
+                <span>T</span>
+                <span>E</span>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <template>
+        <div class="task-list">
+          <div class="check-box" clicked="false" tabindex="0" title="Check">
+            <div class="check">
+              <div class="check-animation"></div>
+            </div>
+          </div>
+          <div class="task-overlay">
+            <span>What are your plans?</span>
+          </div>
+          <div class="image" tabindex="0" title="Insert task details">
+            <img src="../public/clipboard-arrow-up-svgrepo-com.svg" alt="" />
+          </div>
+          <div class="count" tabindex="-1"><span>0</span></div>
+          <div class="time-input">
+            <button tabindex="-1">Apply</button>
+            <div class="inputs">
+              <input tabindex="-1" id="hours" type="text" maxlength="2" />
+              <input tabindex="-1" id="minutes" type="text" maxlength="2" 59 />
+              <input tabindex="-1" id="seconds" type="text" maxlength="2" 59 />
+            </div>
+            <button tabindex="-1">Cancel</button>
+
+            <!-- design flaw -->
+            <div class="colons">
+              <span>:</span>
+              <span>:</span>
+            </div>
+          </div>
+          <div class="time-stage" tabindex="0" title="Add a due date">
+            <span></span>:<span></span>:<span></span>
+          </div>
+        </div>
+      </template>
+      <div class="date"><span></span></div>
+      <div class="time"><span></span></div>
+      <div class="extra-information">
+        <p>Press <span> Ctr + Delete </span>to remove all tasks</p>
+        <p>Press & hold <span>Ctr</span> to show date and time</p>
+      </div>
+    </main>
+  </body>
+</html>
