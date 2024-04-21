@@ -136,7 +136,6 @@ setInterval(() => {
         let input1 = inputs[0]
         let input2 = inputs[1]
         let input3 = inputs[2]
-        taskList.draggable = true
 
         timeStage.onclick = () => {
             if (task.textContent !== 'What are your plans?') {
